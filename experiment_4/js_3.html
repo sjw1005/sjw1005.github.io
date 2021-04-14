@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Math.random()</h2>
+
+<p>点击按钮， 就会返回 1 与 10（均包含）之间的随机数</p>
+
+<button onclick="document.getElementById('demo').innerHTML = getRndInteger(1,10)">点击我</button>
+
+<p id="demo"></p>
+
+<script>
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
+</script>
+
+</body>
+</html>
